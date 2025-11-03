@@ -1,13 +1,7 @@
-# delete.md
+# Delete the Book instance
+from bookshelf.models import Book
+book = Book.objects.get(title="Nineteen Eighty-Four")
+book.delete()
+Book.objects.all()
+# Expected Output: <QuerySet []>
 
-Command:
->>> b.delete()
-
-Expected Output:
-(1, {'bookshelf.Book': 1})
-
-Command:
->>> Book.objects.all()
-
-Expected Output:
-<QuerySet []>

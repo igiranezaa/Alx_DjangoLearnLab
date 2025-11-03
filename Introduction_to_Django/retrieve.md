@@ -1,7 +1,5 @@
-# retrieve.md
+# Retrieve the Book instance
+from bookshelf.models import Book
+Book.objects.all()
+# Expected Output: <QuerySet [<Book: 1984>]>
 
-Command:
->>> Book.objects.all()
-
-Expected Output:
-<QuerySet [<Book: 1984 by George Orwell (1949)>]>

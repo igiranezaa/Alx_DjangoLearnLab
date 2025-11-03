@@ -1,9 +1,8 @@
-# update.md
+# Update the Book title
+from bookshelf.models import Book
+book = Book.objects.get(title="1984")
+book.title = "Nineteen Eighty-Four"
+book.save()
+book
+# Expected Output: <Book: Nineteen Eighty-Four>
 
-Command:
->>> b.title = "Nineteen Eighty-Four"
->>> b.save()
->>> Book.objects.all()
-
-Expected Output:
-<QuerySet [<Book: Nineteen Eighty-Four by George Orwell (1949)>]>
