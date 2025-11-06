@@ -17,6 +17,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'bookshelf',
     'library_rel',
+    'library_rel',
     'relationship_app',
 ]
 
